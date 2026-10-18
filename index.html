@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>守护地球 · Protect Our Planet</title>
+<meta name="description" content="保护环境，从身边小事做起。Protect the environment, starting with small everyday actions.">
+<link rel="canonical" href="https://haha.nn.kg/">
+<style>
+:root{--g:#1f6f43;--g2:#2e9e5e;--light:#eef7f0;--text:#1d2b22;--muted:#5b6b61}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:-apple-system,"Segoe UI","PingFang SC","Microsoft YaHei",sans-serif;color:var(--text);line-height:1.7;background:#fff}
+a{color:var(--g)}
+header{position:sticky;top:0;background:rgba(255,255,255,.95);backdrop-filter:blur(6px);border-bottom:1px solid #e3ece6;z-index:10}
+.nav{max-width:1080px;margin:auto;display:flex;align-items:center;justify-content:space-between;padding:12px 20px}
+.logo{font-weight:700;color:var(--g);font-size:1.15rem}
+.nav ul{display:flex;gap:18px;list-style:none}
+.nav ul a{text-decoration:none;color:var(--text);font-size:.95rem}
+.lang{border:1px solid var(--g);background:#fff;color:var(--g);border-radius:20px;padding:5px 14px;cursor:pointer;font-weight:600}
+.lang:hover{background:var(--g);color:#fff}
+.hero{background:linear-gradient(135deg,#1f6f43 0%,#2e9e5e 55%,#7cc58f 100%);color:#fff;text-align:center;padding:110px 20px 100px}
+.hero h1{font-size:clamp(2rem,5vw,3.2rem);margin-bottom:14px}
+.hero p{font-size:1.15rem;max-width:680px;margin:auto;opacity:.95}
+.btn{display:inline-block;margin-top:28px;background:#fff;color:var(--g);padding:12px 28px;border-radius:30px;text-decoration:none;font-weight:700}
+section{padding:70px 20px}
+.wrap{max-width:1080px;margin:auto}
+h2{font-size:1.9rem;color:var(--g);margin-bottom:10px;text-align:center}
+.sub{text-align:center;color:var(--muted);max-width:720px;margin:0 auto 40px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:22px}
+.card{background:#fff;border:1px solid #e3ece6;border-radius:14px;padding:24px;box-shadow:0 2px 10px rgba(31,111,67,.06)}
+.card .ic{font-size:2rem}
+.card h3{margin:8px 0 6px;font-size:1.15rem}
+.card p{color:var(--muted);font-size:.96rem}
+.alt{background:var(--light)}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:22px;text-align:center}
+.stat b{display:block;font-size:2.2rem;color:var(--g)}
+.stat span{color:var(--muted);font-size:.95rem}
+ol.tips{max-width:760px;margin:auto;padding-left:22px}
+ol.tips li{margin:10px 0}
+.pledge{text-align:center}
+.pledge button{background:var(--g);color:#fff;border:none;border-radius:30px;padding:13px 32px;font-size:1rem;font-weight:700;cursor:pointer}
+.pledge button:disabled{background:var(--g2);cursor:default}
+#count{margin-top:14px;color:var(--muted)}
+footer{background:#163f28;color:#cfe6d6;text-align:center;padding:28px 20px;font-size:.9rem}
+.note{font-size:.8rem;color:var(--muted);text-align:center;margin-top:24px}
+@media(max-width:640px){.nav ul{display:none}}
+</style>
+</head>
+<body>
+<header><div class="nav">
+<div class="logo">🌿 <span data-zh="守护地球" data-en="Protect Our Planet">守护地球</span></div>
+<ul>
+<li><a href="#why" data-zh="为什么" data-en="Why">为什么</a></li>
+<li><a href="#issues" data-zh="环境问题" data-en="Issues">环境问题</a></li>
+<li><a href="#act" data-zh="行动指南" data-en="Take Action">行动指南</a></li>
+<li><a href="#pledge" data-zh="承诺" data-en="Pledge">承诺</a></li>
+</ul>
+<button class="lang" id="langBtn" onclick="toggleLang()">EN</button>
+</div></header>
+
+<div class="hero">
+<h1 data-zh="保护环境，从你我做起" data-en="Protect the Environment, Starting With Us">保护环境，从你我做起</h1>
+<p data-zh="地球只有一个。每一次随手关灯、每一个自带的水杯，都是给未来的一份礼物。" data-en="We only have one Earth. Every light switched off and every reusable cup is a gift to the future.">地球只有一个。每一次随手关灯、每一个自带的水杯，都是给未来的一份礼物。</p>
+<a class="btn" href="#act" data-zh="立即行动" data-en="Take Action">立即行动</a>
+</div>
+
+<section id="why"><div class="wrap">
+<h2 data-zh="为什么要保护环境？" data-en="Why Protect the Environment?">为什么要保护环境？</h2>
+<p class="sub" data-zh="干净的空气、水和稳定的气候是人类健康与发展的基础。" data-en="Clean air, clean water and a stable climate are the foundation of human health and prosperity.">干净的空气、水和稳定的气候是人类健康与发展的基础。</p>
+<div class="stats">
+<div class="stat"><b>1.5°C</b><span data-zh="《巴黎协定》力争的升温控制目标" data-en="Warming limit the Paris Agreement aims for">《巴黎协定》力争的升温控制目标</span></div>
+<div class="stat"><b>99%</b><span data-zh="世界人口呼吸的空气超出世卫组织指导值（WHO）" data-en="Of people breathe air above WHO guideline limits">世界人口呼吸的空气超出世卫组织指导值（WHO）</span></div>
+<div class="stat"><b data-zh="1100万吨" data-en="11 million t">1100万吨</b><span data-zh="每年约有这么多塑料流入水体和海洋（UNEP）" data-en="Of plastic flow into rivers and oceans each year (UNEP)">每年约有这么多塑料进入海洋（UNEP）</span></div>
+</div>
+</div></section>
+
+<section id="issues" class="alt"><div class="wrap">
+<h2 data-zh="主要环境问题" data-en="Key Environmental Issues">主要环境问题</h2>
+<p class="sub" data-zh="了解问题，是解决问题的第一步。" data-en="Understanding the problem is the first step to solving it.">了解问题，是解决问题的第一步。</p>
+<div class="grid">
+<div class="card"><div class="ic">🌡️</div><h3 data-zh="气候变化" data-en="Climate Change">气候变化</h3><p data-zh="化石燃料燃烧排放的温室气体使全球变暖，带来极端天气和海平面上升。" data-en="Greenhouse gases from burning fossil fuels warm the planet, bringing extreme weather and rising seas.">化石燃料燃烧排放的温室气体使全球变暖，带来极端天气和海平面上升。</p></div>
+<div class="card"><div class="ic">🏭</div><h3 data-zh="空气污染" data-en="Air Pollution">空气污染</h3><p data-zh="工业、交通排放的细颗粒物危害呼吸系统和心血管健康。" data-en="Fine particles from industry and traffic harm our lungs and hearts.">工业、交通排放的细颗粒物危害呼吸系统和心血管健康。</p></div>
+<div class="card"><div class="ic">🌊</div><h3 data-zh="海洋塑料" data-en="Ocean Plastic">海洋塑料</h3><p data-zh="塑料需要数百年才能降解，威胁海洋生物，并以微塑料形式进入食物链。" data-en="Plastic takes centuries to break down, harming marine life and entering our food as microplastics.">塑料需要数百年才能降解，威胁海洋生物，并以微塑料形式进入食物链。</p></div>
+<div class="card"><div class="ic">🌳</div><h3 data-zh="森林与物种消失" data-en="Forest & Species Loss">森林与物种消失</h3><p data-zh="毁林和栖息地破坏让大量动植物面临灭绝风险。" data-en="Deforestation and habitat loss push countless plants and animals toward extinction.">毁林和栖息地破坏让大量动植物面临灭绝风险。</p></div>
+</div>
+</div></section>
+
+<section id="act"><div class="wrap">
+<h2 data-zh="日常行动指南" data-en="Everyday Action Guide">日常行动指南</h2>
+<p class="sub" data-zh="小习惯，大改变。" data-en="Small habits, big change.">小习惯，大改变。</p>
+<ol class="tips">
+<li data-zh="自带购物袋、水杯和餐具，减少一次性塑料。" data-en="Bring your own bag, bottle and cutlery to cut single-use plastic.">自带购物袋、水杯和餐具，减少一次性塑料。</li>
+<li data-zh="做好垃圾分类，让可回收物真正被回收。" data-en="Sort your waste so recyclables actually get recycled.">做好垃圾分类，让可回收物真正被回收。</li>
+<li data-zh="随手关灯、拔掉待机电器，空调温度夏季不低于 26°C。" data-en="Switch off lights, unplug idle devices, and keep the AC at 26°C or above in summer.">随手关灯、拔掉待机电器，空调温度夏季不低于 26°C。</li>
+<li data-zh="多步行、骑车或乘坐公共交通，少开车。" data-en="Walk, cycle or take public transport instead of driving.">多步行、骑车或乘坐公共交通，少开车。</li>
+<li data-zh="节约用水：缩短淋浴时间，修好漏水的水龙头。" data-en="Save water: take shorter showers and fix leaky taps.">节约用水：缩短淋浴时间，修好漏水的水龙头。</li>
+<li data-zh="按需购买，少浪费食物，多选本地和当季食材。" data-en="Buy only what you need, waste less food, and choose local, seasonal produce.">按需购买，少浪费食物，多选本地和当季食材。</li>
+<li data-zh="参与植树、清洁海滩等志愿活动，影响身边的人。" data-en="Join tree planting or beach clean-ups, and inspire people around you.">参与植树、清洁海滩等志愿活动，影响身边的人。</li>
+</ol>
+</div></section>
+
+<section id="pledge" class="alt"><div class="wrap pledge">
+<h2 data-zh="加入环保承诺" data-en="Take the Green Pledge">加入环保承诺</h2>
+<p class="sub" data-zh="我承诺：从今天起，践行绿色生活，守护我们共同的家园。" data-en="I pledge to live greener from today and protect our shared home.">我承诺：从今天起，践行绿色生活，守护我们共同的家园。</p>
+<button id="pledgeBtn" onclick="pledge()" data-zh="我承诺 🌱" data-en="I Pledge 🌱">我承诺 🌱</button>
+<div id="count"></div>
+</div></section>
+
+<footer>
+<p data-zh="© 2026 守护地球 · haha.nn.kg · 让地球更绿一点" data-en="© 2026 Protect Our Planet · haha.nn.kg · Making Earth a little greener">© 2026 守护地球 · haha.nn.kg · 让地球更绿一点</p>
+</footer>
+
+<script>
+var lang=localStorage.getItem('lang')||((navigator.language||'zh').toLowerCase().indexOf('zh')===0?'zh':'en');
+function apply(){
+document.querySelectorAll('[data-zh]').forEach(function(el){el.textContent=el.getAttribute('data-'+lang);});
+document.documentElement.lang=lang==='zh'?'zh-CN':'en';
+document.title=lang==='zh'?'守护地球 · 保护环境':'Protect Our Planet';
+document.getElementById('langBtn').textContent=lang==='zh'?'EN':'中文';
+var b=document.getElementById('pledgeBtn');
+if(localStorage.getItem('pledged')){b.disabled=true;b.textContent=lang==='zh'?'已承诺，谢谢你！✅':'Pledged, thank you! ✅';
+document.getElementById('count').textContent=lang==='zh'?'感谢你为地球出一份力。':'Thank you for doing your part for the planet.';}
+}
+function toggleLang(){lang=lang==='zh'?'en':'zh';localStorage.setItem('lang',lang);apply();}
+function pledge(){localStorage.setItem('pledged','1');apply();}
+apply();
+</script>
+</body>
+</html>
